@@ -2,14 +2,14 @@ from langchain_openai import ChatOpenAI
 from langchain.prompts import ChatPromptTemplate
 import json
 
-# Function to write to JSON
+# Function to write to json
 def write_json(new_data, filename='CoursePlan.json'):
     with open(filename, 'w') as file:
         course_plan = json.loads(new_data)
         json.dump(course_plan, file, indent=4)
 
 def main():
-    chat = ChatOpenAI(model = "gpt-4o", temperature=0.4)
+    chat = ChatOpenAI(model = "gpt-4o", temperature=0.4,  openai_api_key = "sk-proj-s7w3GUq3G6EiHZWM4oghT3BlbkFJgIksLxDpcdlAhIUw7Q3n")
 
     # Test series of classes
     # This list will eventually be derived from the ASSIST input
