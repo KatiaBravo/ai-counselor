@@ -9,7 +9,7 @@ def write_json(new_data, filename='CoursePlan.json'):
         json.dump(course_plan, file, indent=4)
 
 def main():
-    chat = ChatOpenAI(model = "gpt-4o", temperature=0.4, openai_api_key = "sk-proj-s7w3GUq3G6EiHZWM4oghT3BlbkFJgIksLxDpcdlAhIUw7Q3n")
+    chat = ChatOpenAI(model = "gpt-4o", temperature=0.4)
 
     # Test series of classes
     # This list will eventually be derived from the ASSIST input
